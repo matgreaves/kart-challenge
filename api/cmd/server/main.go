@@ -22,7 +22,7 @@ import (
 
 const (
 	// Address for the http server to listen on.
-	DefaultAddress  = "127.0.0.1:8080"
+	DefaultAddress  = "0.0.0.0:8080"
 	DefaultLogLevel = slog.LevelInfo
 )
 
