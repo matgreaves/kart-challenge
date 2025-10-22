@@ -18,6 +18,17 @@ api/products/data.json:
 api/coupons/data: tmp/coupons/couponbase1 tmp/coupons/couponbase2 tmp/coupons/couponbase3
 	go run ./tools/coupons -f "$^" > $@
 
+# compile the application
+.PHONY: bin
+bin:
+	mkdir -p tmp/bin
+	CGO_ENABLED=0 go build -o ./tmp/bin/kart ./api/cmd/server
+
+# build app into a Docker container
+.PHONY: docker
+docker:
+	docker build . -t kart
+
 # downloand coupon source files
 tmp/coupons/%:
 	mkdir -p tmp/coupons

@@ -10,9 +10,15 @@ run server: `make server`
 
 run tests: `make test`
 
+build app: `make bin`
+
+build app as container: `make docker`
+
 regenerate coupon database: `make api/coupons/data`
 
 regenerate product database: `make api/products/data.json`
+
+remove generated files: `make clean`
 
 ## Key Features
 
