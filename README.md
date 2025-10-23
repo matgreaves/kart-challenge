@@ -6,7 +6,7 @@ I like to design for simplicity and refactorbility with a strong focus on "Black
 
 ## Usage
 
-run server: `make server`
+run server: `make server` will run the server on `localhost:8080` see the [api documentation](https://orderfoodonline.deno.dev/public/openapi.html) though be aware the server should be `http://localhost:8080` instead of `https://orderfoodonline.deno.dev/api`.
 
 run tests: `make test`
 
